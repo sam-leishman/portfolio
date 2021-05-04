@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<div class="mainDiv">
+
+    <mat-card *ngFor="let site of sites">
+        <a href="{{ site.link }}" target="_blank" rel="noreferrer">
+            <h3>{{ site.name }}</h3>
+            <img
+                class="logo"
+                [src]="site.src || site.logo"
+                (mouseover)="site.src = site.hover"
+                (mouseout)="site.src = site.logo"
+                alt="{{ site.name }}-logo">
+            <p>{{ site.username }}</p>
+        </a>
+    </mat-card>
+
+</div>
