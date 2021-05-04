@@ -1,1 +1,34 @@
-<p>navbar works!</p>
+<mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <h1>Sam Leishman</h1>
+    <mat-nav-list fxShow="true" fxHide.lt-md>
+        <a routerLink="./projects" mat-list-item>
+            <mat-icon>code</mat-icon>
+            Projects
+        </a>
+        <a routerLink="./contact" mat-list-item>
+            <mat-icon>info</mat-icon>
+            Contact
+        </a>
+    </mat-nav-list>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a (click)="sidenav.toggle()" routerLink="./projects" mat-list-item>
+                <mat-icon>code</mat-icon>
+                Projects
+            </a>
+            <a (click)="sidenav.toggle()" routerLink="./contact" mat-list-item>
+                <mat-icon>info</mat-icon>
+                Contact
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
