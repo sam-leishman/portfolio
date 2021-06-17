@@ -1,19 +1,27 @@
 <div class="mainDiv">
 
-    <div class="javascript">
+    <div class="project-category">
         <h2>Javascript</h2>
         <!-- on hover, have it show a slightly opaque image of website over the card -->
         <mat-card *ngFor="let project of javascriptProjects">
             <a href="{{ project.url }}" target="_blank" rel="noreferrer">
                 <h3>{{ project.name }}</h3>
+                <p>{{ project.description }}</p>
             </a>
+        </mat-card>
+    </div>
+
+    <div class="project-category">
+        <h2>Backend</h2>
+        <mat-card *ngFor="let project of backendProjects">
+            <h3>{{ project.name }}</h3>
             <p>{{ project.description }}</p>
         </mat-card>
     </div>
 
-    <div class="backend">
-        <h2>Backend</h2>
-        <mat-card *ngFor="let project of backendProjects">
+    <div class="project-category">
+        <h2>Other Projects</h2>
+        <mat-card *ngFor="let project of otherProjects">
             <h3>{{ project.name }}</h3>
             <p>{{ project.description }}</p>
         </mat-card>
