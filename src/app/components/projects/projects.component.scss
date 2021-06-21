@@ -5,19 +5,35 @@
     flex-wrap: wrap;
     padding: 25px;
 
-    .project-category {
+    .projects {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 350px;
 
-        mat-card {
-            width: 100%;
-            margin-bottom: 10px;
+        .project-cards {
+            display: flex;
+            flex-wrap: wrap;
 
-            a {
-                text-decoration: none;
-                color: inherit;
+            mat-card {
+                width: 350px;
+                margin: 10px;
+    
+                a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    .card-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        .developed {
+                            color: gray;
+                            font-size: small;
+                        }
+                    }
+
+                }
             }
         }
     }
