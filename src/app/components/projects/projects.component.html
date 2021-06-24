@@ -3,15 +3,17 @@
     <div class="projects">
         <h2>Projects</h2>
         <div class="project-cards">
-            <mat-card *ngFor="let project of projects">
-                <a href="{{ project.url }}" target="_blank" rel="noreferrer">
-                    <span class="card-title">
-                        <h3>{{ project.name }}</h3>
-                        <h5 class="developed">{{ project.developed }}</h5>
-                    </span>
-                    <p>{{ project.description }}</p>
-                </a>
-            </mat-card>
+            <div *ngFor="let project of projects">
+                <mat-card class="{{ project.class }}">
+                    <a href="{{ project.url }}" target="_blank" rel="noreferrer">
+                        <span class="card-title">
+                            <h3>{{ project.name }}</h3>
+                            <h5 class="developed">{{ project.developed }}</h5>
+                        </span>
+                        <p>{{ project.description }}</p>
+                    </a>
+                </mat-card>
+            </div>
         </div>
     </div>
 

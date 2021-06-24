@@ -14,6 +14,78 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
 
+            .ryparis {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/RYParisScreenshot.png);
+                }
+            }
+
+            .nickcage {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/NickCageScreenshot.png);
+                }
+            }
+
+            .todoapp {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/ToDoAppScreenshot.png);
+                }
+            }
+
+            .pokemon {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/PokemonScreenshot.png);
+                }
+            }
+
+            .scorecard-js {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/ScorecardJSScreenshot.png);
+                }
+            }
+
+            .chatapp {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/ChatAppScreenshot.png);
+                }
+            }
+
+            .timesheet {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/TimesheetScreenshot.png);
+                }
+            }
+
+            .scorecard-ng {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/ScorecardNGScreenshot.png);
+                }
+            }
+
+            .pokemonmatching {
+                transition: all 300ms;
+
+                &:hover {
+                    background-image: url(../../../assets/screenshots/PokemonMatchingScreenshot.png);
+                }
+            }
+
             mat-card {
                 width: 350px;
                 margin: 10px;
@@ -34,7 +106,6 @@
                         
                         .developed {
                             color: gray;
-                            font-size: small;
                         }
                     }
 
